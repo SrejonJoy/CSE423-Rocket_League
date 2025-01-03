@@ -605,9 +605,8 @@ def hasCollided(box1_x,box1_y,box1_height,box1_width,box2_x,box2_y,box2_height,b
     collision = (box1_x - box1_width / 2) < (box2_x + box2_width / 2) and(box1_x + box1_width / 2) > (box2_x - box2_width / 2) and (box1_y - box1_height / 2) < (box2_y + box2_height / 2) and (box1_y + box1_height / 2) > (box2_y - box2_height / 2)
     
     if not collision:
-        return "No Collision"  # No collision occurred
+        return "No Collision"  
 
-    # Determine which part of box1 collided with box2
     box1_center_x = box1_x
     box1_center_y = box1_y
     box2_center_x = box2_x
@@ -641,9 +640,9 @@ def convert_coordinate(x,y):
 
 
 def mouseListener(button, state, x, y):
-    global pause	#/#/x, y is the x-y of the screen (2D)
+    global pause	
     if button==GLUT_LEFT_BUTTON:
-        if(state == GLUT_DOWN):    # 		// 2 times?? in ONE click? -- solution is checking DOWN or UP
+        if(state == GLUT_DOWN):   
             c_X, c_y = convert_coordinate(x,y)
             if (c_X>=-250 and c_X<=-190) and (c_y>=205 and c_y<=250):
                 print('Restart')
