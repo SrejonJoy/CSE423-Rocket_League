@@ -719,12 +719,6 @@ def keyboardUp(key, x, y):
 
 
 
-    # Restore projection and modelview matrices
-    glMatrixMode(GL_PROJECTION)
-    glPopMatrix()
-
-    glMatrixMode(GL_MODELVIEW)
-    glPopMatrix()
 
 
 
@@ -851,8 +845,8 @@ def display():
         draw_line([-248+x_axis_move_Car_1,-220+y_axis_move_Car_1],[-248+x_axis_move_Car_1,-240+y_axis_move_Car_1],1,car1_coulour)#bamer 
         draw_line([-223+x_axis_move_Car_1,-220+y_axis_move_Car_1],[-210+x_axis_move_Car_1,-232+y_axis_move_Car_1],1,car1_coulour)#daner uporer
         draw_line([-210+x_axis_move_Car_1,-240+y_axis_move_Car_1],[-210+x_axis_move_Car_1,-232+y_axis_move_Car_1],1,car1_coulour)#daner nicher
-        draw_line([-210+x_axis_move_Car_1,-220+y_axis_move_Car_1],[-210+x_axis_move_Car_1,-240+y_axis_move_Car_1],1,car1_coulour)#Daner hitbox
-        draw_line([-248+x_axis_move_Car_1,-220+y_axis_move_Car_1],[-210+x_axis_move_Car_1,-220+y_axis_move_Car_1],1,car1_coulour)#Uporer hitbox
+        # draw_line([-210+x_axis_move_Car_1,-220+y_axis_move_Car_1],[-210+x_axis_move_Car_1,-240+y_axis_move_Car_1],1,car1_coulour)#Daner hitbox
+        # draw_line([-248+x_axis_move_Car_1,-220+y_axis_move_Car_1],[-210+x_axis_move_Car_1,-220+y_axis_move_Car_1],1,car1_coulour)#Uporer hitbox
         #####Chaka#############
         drawCircle(-238+x_axis_move_Car_1,-245+y_axis_move_Car_1,1,car1_coulour,5)
         drawCircle(-220+x_axis_move_Car_1,-245+y_axis_move_Car_1,1,car1_coulour,5)
@@ -860,15 +854,15 @@ def display():
         car1_r=-210+x_axis_move_Car_1
         car1_l=-248+x_axis_move_Car_1
         car1_d=-240+y_axis_move_Car_1
-        draw_points(car1_r, car1_d,5,[1,0,0])
-        draw_points(car1_r,car1_u,5,[0,1,0])
-        draw_points(car1_l, car1_d,5,[0,0,1])
-        draw_points(car1_l, car1_u,5,[0,1,1])
+        # draw_points(car1_r, car1_d,5,[1,0,0])
+        # draw_points(car1_r,car1_u,5,[0,1,0])
+        # draw_points(car1_l, car1_d,5,[0,0,1])
+        # draw_points(car1_l, car1_u,5,[0,1,1])
         # print(car1_r)
         # print(car1_l)
         car1_center_x=-229+x_axis_move_Car_1
         car1_center_y=-230+y_axis_move_Car_1
-        draw_points(car1_center_x, car1_center_y,5,[1,1,0])
+        # draw_points(car1_center_x, car1_center_y,5,[1,1,0])
         # print(car1_center_x,car1_center_y)
         # print('width:',car1_width,'Height:',car1_height)
 
@@ -878,25 +872,25 @@ def display():
         draw_line([-210+x_axis_move_Car_1,-220+y_axis_move_Car_1],[-210+x_axis_move_Car_1,-240+y_axis_move_Car_1],1,car1_coulour)#daner 
         draw_line([-235+x_axis_move_Car_1,-220+y_axis_move_Car_1],[-248+x_axis_move_Car_1,-232+y_axis_move_Car_1],1,car1_coulour)#daner uporer
         draw_line([-248+x_axis_move_Car_1,-240+y_axis_move_Car_1],[-248+x_axis_move_Car_1,-232+y_axis_move_Car_1],1,car1_coulour)#daner nicher
-        draw_line([-248+x_axis_move_Car_1,-220+y_axis_move_Car_1],[-248+x_axis_move_Car_1,-240+y_axis_move_Car_1],1,car1_coulour)#Daner hitboxs
-        draw_line([-248+x_axis_move_Car_1,-220+y_axis_move_Car_1],[-210+x_axis_move_Car_1,-220+y_axis_move_Car_1],1,car1_coulour)#Uporer hitbox
+        # draw_line([-248+x_axis_move_Car_1,-220+y_axis_move_Car_1],[-248+x_axis_move_Car_1,-240+y_axis_move_Car_1],1,car1_coulour)#Daner hitboxs
+        # draw_line([-248+x_axis_move_Car_1,-220+y_axis_move_Car_1],[-210+x_axis_move_Car_1,-220+y_axis_move_Car_1],1,car1_coulour)#Uporer hitbox
 
         #####Chaka#############
         drawCircle(-238+x_axis_move_Car_1,-245+y_axis_move_Car_1,1,car1_coulour,5)
         drawCircle(-220+x_axis_move_Car_1,-245+y_axis_move_Car_1,1,car1_coulour,5)
-        car1_u=-220+y_axis_move_Car_1
-        car1_r=-210+x_axis_move_Car_1
-        car1_l=-248+x_axis_move_Car_1
-        car1_d=-240+y_axis_move_Car_1
-        draw_points(car1_r, car1_d,5,[1,0,0])
-        draw_points(car1_r,car1_u,5,[0,1,0])
-        draw_points(car1_l, car1_d,5,[0,0,1])
-        draw_points(car1_l, car1_u,5,[0,1,1])
+        # car1_u=-220+y_axis_move_Car_1
+        # car1_r=-210+x_axis_move_Car_1
+        # car1_l=-248+x_axis_move_Car_1
+        # car1_d=-240+y_axis_move_Car_1
+        # draw_points(car1_r, car1_d,5,[1,0,0])
+        # draw_points(car1_r,car1_u,5,[0,1,0])
+        # draw_points(car1_l, car1_d,5,[0,0,1])
+        # draw_points(car1_l, car1_u,5,[0,1,1])
         # print(car1_r)
         # print(car1_l)
         car1_center_x=-229+x_axis_move_Car_1
         car1_center_y=-230+y_axis_move_Car_1
-        draw_points(car1_center_x, car1_center_y,5,[1,1,0])
+        # draw_points(car1_center_x, car1_center_y,5,[1,1,0])
         # print(car1_center_x,car1_center_y)
         # print('width:',car1_width,'Height:',car1_height)
 
@@ -907,8 +901,8 @@ def display():
         draw_line([248+x_axis_move_Car_2,-220+y_axis_move_Car_2],[248+x_axis_move_Car_2,-240+y_axis_move_Car_2],1,car2_coulour)#bamer 
         draw_line([223+x_axis_move_Car_2,-220+y_axis_move_Car_2],[210+x_axis_move_Car_2,-232+y_axis_move_Car_2],1,car2_coulour)#daner uporer
         draw_line([210+x_axis_move_Car_2,-240+y_axis_move_Car_2],[210+x_axis_move_Car_2,-232+y_axis_move_Car_2],1,car2_coulour)#daner nicher
-        draw_line([210+x_axis_move_Car_2,-220+y_axis_move_Car_2],[210+x_axis_move_Car_2,-240+y_axis_move_Car_2],1,car2_coulour)#Daner hitbox
-        draw_line([248+x_axis_move_Car_2,-220+y_axis_move_Car_2],[210+x_axis_move_Car_2,-220+y_axis_move_Car_2],1,car2_coulour)#Uporer hitbox
+        # draw_line([210+x_axis_move_Car_2,-220+y_axis_move_Car_2],[210+x_axis_move_Car_2,-240+y_axis_move_Car_2],1,car2_coulour)#Daner hitbox
+        # draw_line([248+x_axis_move_Car_2,-220+y_axis_move_Car_2],[210+x_axis_move_Car_2,-220+y_axis_move_Car_2],1,car2_coulour)#Uporer hitbox
         #####Chaka#############
         drawCircle(238+x_axis_move_Car_2,-245+y_axis_move_Car_2,1,car2_coulour,5)
         drawCircle(220+x_axis_move_Car_2,-245+y_axis_move_Car_2,1,car2_coulour,5)
@@ -916,15 +910,15 @@ def display():
         car2_r=210+x_axis_move_Car_2
         car2_l=248+x_axis_move_Car_2
         car2_d=-240+y_axis_move_Car_2
-        draw_points(car2_r, car2_d,5,[1,0,0])
-        draw_points(car2_r,car2_u,5,[0,1,0])
-        draw_points(car2_l, car2_d,5,[0,0,1])
-        draw_points(car2_l, car2_u,5,[0,1,1])
+        # draw_points(car2_r, car2_d,5,[1,0,0])
+        # draw_points(car2_r,car2_u,5,[0,1,0])
+        # draw_points(car2_l, car2_d,5,[0,0,1])
+        # draw_points(car2_l, car2_u,5,[0,1,1])
         # print(car2_r)
         # print(car2_l)
         car2_center_x=229+x_axis_move_Car_2
         car2_center_y=-230+y_axis_move_Car_2
-        draw_points(car2_center_x, car2_center_y,5,[1,1,0])
+        # draw_points(car2_center_x, car2_center_y,5,[1,1,0])
         # print(car2_center_x,car2_center_y)
         # print('width:',car2_width,'Height:',car2_height)
 
@@ -934,8 +928,8 @@ def display():
         draw_line([210+x_axis_move_Car_2,-220+y_axis_move_Car_2],[210+x_axis_move_Car_2,-240+y_axis_move_Car_2],1,car2_coulour)#daner 
         draw_line([235+x_axis_move_Car_2,-220+y_axis_move_Car_2],[248+x_axis_move_Car_2,-232+y_axis_move_Car_2],1,car2_coulour)#daner uporer
         draw_line([248+x_axis_move_Car_2,-240+y_axis_move_Car_2],[248+x_axis_move_Car_2,-232+y_axis_move_Car_2],1,car2_coulour)#daner nicher
-        draw_line([248+x_axis_move_Car_2,-220+y_axis_move_Car_2],[248+x_axis_move_Car_2,-240+y_axis_move_Car_2],1,car2_coulour)#Daner hitboxs
-        draw_line([248+x_axis_move_Car_2,-220+y_axis_move_Car_2],[210+x_axis_move_Car_2,-220+y_axis_move_Car_2],1,car2_coulour)#Uporer hitbox
+        # draw_line([248+x_axis_move_Car_2,-220+y_axis_move_Car_2],[248+x_axis_move_Car_2,-240+y_axis_move_Car_2],1,car2_coulour)#Daner hitboxs
+        # draw_line([248+x_axis_move_Car_2,-220+y_axis_move_Car_2],[210+x_axis_move_Car_2,-220+y_axis_move_Car_2],1,car2_coulour)#Uporer hitbox
 
         #####Chaka#############
         drawCircle(238+x_axis_move_Car_2,-245+y_axis_move_Car_2,1,car2_coulour,5)
@@ -944,15 +938,15 @@ def display():
         car2_r=210+x_axis_move_Car_2
         car2_l=248+x_axis_move_Car_2
         car2_d=-240+y_axis_move_Car_2
-        draw_points(car2_r, car2_d,5,[1,0,0])
-        draw_points(car2_r,car2_u,5,[0,1,0])
-        draw_points(car2_l, car2_d,5,[0,0,1])
-        draw_points(car2_l, car2_u,5,[0,1,1])
+        # draw_points(car2_r, car2_d,5,[1,0,0])
+        # draw_points(car2_r,car2_u,5,[0,1,0])
+        # draw_points(car2_l, car2_d,5,[0,0,1])
+        # draw_points(car2_l, car2_u,5,[0,1,1])
         # print(car2_r)
         # print(car2_l)
         car2_center_x=229+x_axis_move_Car_2
         car2_center_y=-230+y_axis_move_Car_2
-        draw_points(car2_center_x, car2_center_y,5,[1,1,0])
+        # draw_points(car2_center_x, car2_center_y,5,[1,1,0])
         # print(car2_center_x,car2_center_y)
         # print('width:',car2_width,'Height:',car2_height)
 
@@ -1612,7 +1606,7 @@ glutInitWindowPosition(0, 0)
 glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGB) #	//Depth, Double buffer, RGB color
 
 # glutCreateWindow("My OpenGL Program")
-wind = glutCreateWindow(b"Rocket League 2D")
+wind = glutCreateWindow(b"OpenGL Coding Practice")
 init()
 
 glutDisplayFunc(display)	#display callback function
